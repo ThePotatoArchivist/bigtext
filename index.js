@@ -9,9 +9,10 @@ if (text === null)
         textDiv.focus()
         textDiv.selectionStart = textDiv.selectionEnd = textDiv.innerText.length
     }, 0)
-else
+else {
     textDiv.appendChild(document.createTextNode(text))
     document.title = text
+}
 
 function debounce(func, delay) {
     let timer;
