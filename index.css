@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#text {
+    height: 100vh;
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    font-size: 4em;
+    text-align: center;
+}
