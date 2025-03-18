@@ -4,12 +4,13 @@ const text = params.get("t");
 
 const textDiv = document.getElementById('text')
 
-if (text === null)
+if (text === null) {
+    textDiv.appendChild(document.createTextNode('Replace with your message'))
     setTimeout(() => {
         textDiv.focus()
         textDiv.selectionStart = textDiv.selectionEnd = textDiv.innerText.length
     }, 0)
-else {
+} else {
     textDiv.appendChild(document.createTextNode(text))
     document.title = text
 }
